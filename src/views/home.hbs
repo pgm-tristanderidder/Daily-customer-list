@@ -1,0 +1,17 @@
+Hello world!
+
+<form method="post" class="form" action="login">
+    <div class="input-container">
+      {{#each inputs}}
+        {{>form this}}
+      {{/each}}
+    </div>
+    <div class="login__footer">
+      <div class="login__left">
+      <input type="submit" class="button" value="Login">
+      </div>
+      <div class="login__right">
+      <a href="/register">Registreer</a>
+      </div>
+    </div>
+  </form>
