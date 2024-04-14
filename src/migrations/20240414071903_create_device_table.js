@@ -8,6 +8,8 @@ export function up(knex) {
         table.string("brand").notNullable();
         table.string("part").notNullable();
         table.string("price").notNullable();
+        table.boolean("completed").notNullable().defaultTo(false);
+        table.boolean("picked_up").notNullable().defaultTo(false);
         table.integer("customer_id").notNullable();
         table.timestamps(true, true);
 

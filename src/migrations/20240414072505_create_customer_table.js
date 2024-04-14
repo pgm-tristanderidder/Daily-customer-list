@@ -7,6 +7,7 @@ export function up(knex) {
         table.string("customer").notNullable();
         table.string("email", 255);
         table.string("number", 255);
+        table.boolean("bill").notNullable().defaultTo(false);
         table.timestamps(true, true);
     });
 }
